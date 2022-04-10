@@ -1,10 +1,10 @@
-package com.sofka;
-import java.util.Date;
-
 /**
  * @description: class Person is defined with its attributes and its methods.
  * @author: coronadoapps
  */
+
+package com.sofka;
+import java.util.Date;
 
 public class Person {
     /**
@@ -17,12 +17,38 @@ public class Person {
     public float height;
 
     /**
+     * Constructor
+     */
+    public Person(String name, String lastName1, String lastName2) {
+        this.name = name;
+        this.lastName1 = lastName1;
+        this.lastName2 = lastName2;
+        this.height = height;
+    }
+
+    /**
+     * Overloaded constructor
+     */
+    public Person(String name, String lastName1, String lastName2, float height){
+        this(name, lastName1, lastName2);
+        this.height = height;
+    }
+
+    /**
+     * Another overloaded constructor
+     */
+    public Person(String name, String lastName1, String lastName2, float height, Date dateBirth){
+        this(name, lastName1, lastName2, height);
+        this.dateBirth = dateBirth;
+    }
+
+    /**
      * Setter method is defined
-     * @param _name
+     * @param name
      * @return void
      */
-    public void setName(String _name){
-        this.name = _name;
+    public void setName(String name){
+        this.name = name;
     }
 
     /**
@@ -30,5 +56,16 @@ public class Person {
      * @param void
      * @return this.name
      */
-    public String getName(){ return this.name; }
+    public String getName(){
+        return this.name;
+    }
+
+    /**
+     * Getter method is defined
+     * @param void
+     * @return name + lastName1 + lastName2
+     */
+    public String getFullName(){
+        return this.name + ' ' + this.lastName1 + ' ' + this.lastName2;
+    }
 }

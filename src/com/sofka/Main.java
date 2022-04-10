@@ -1,11 +1,16 @@
 package com.sofka;
 
+import java.util.Date;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        Person person1 = new Person();
-        person1.setName("Stiven");
-        System.out.println(person1.getName());
+        Person person1;
+        person1 = new Person("Stiven", "Coronado", "Borja", 1.80f);
+        System.out.println(person1.getFullName());
+
+        Date date = new Date();
+        System.out.println(date);
     }
+
 }

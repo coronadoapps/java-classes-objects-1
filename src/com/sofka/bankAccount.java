@@ -1,30 +1,37 @@
-package com.sofka;
-
 /**
  * @description: class bankAccount is defined with its attributes and its methods.
  * @author: coronadoapps
  */
+package com.sofka;
 
 public class bankAccount {
     /**
-     * Attributes defined for class Person
+     * Attributes defined for class bankAccount
      */
     private int accountNumber;
     protected boolean activated;
 
     /**
+     * Constructor
+     */
+    public bankAccount(int accountNumber, boolean activated) {
+        this.accountNumber = accountNumber;
+        this.activated = activated;
+    }
+
+    /**
      * Setter method is defined
-     * @param _activated
+     * @param activated
      * @return void
      */
-    public void setActivated(boolean _activated){
-        this.activated = _activated;
+    public void setActivated(boolean activated){
+        this.activated = activated;
     }
 
     /**
      * Getter method is defined
      * @param void
-     * @return this.activated
+     * @return activated value
      */
     public boolean getActivated(){
         return this.activated;
