@@ -1,6 +1,7 @@
 /**
  * @description: class Person is defined with its attributes and its methods.
  * @author: coronadoapps
+ * @date: april-2022
  */
 
 package com.sofka;

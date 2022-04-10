@@ -1,10 +1,12 @@
 /**
  * @description: class bankAccount is defined with its attributes and its methods.
  * @author: coronadoapps
+ * @date: april-2022
  */
+
 package com.sofka;
 
-public class bankAccount {
+public class BankAccount {
     /**
      * Attributes defined for class bankAccount
      */
@@ -14,7 +16,7 @@ public class bankAccount {
     /**
      * Constructor
      */
-    public bankAccount(int accountNumber, boolean activated) {
+    public BankAccount(int accountNumber, boolean activated) {
         this.accountNumber = accountNumber;
         this.activated = activated;
     }
